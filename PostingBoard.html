@@ -1,0 +1,74 @@
+<div class = "tab">
+  <center>
+    <a href = "C:/Users/krist/OneDrive/Documents/roadrunners/Home.html">
+    <button class = "tablinks" onclick="openTab(event, 'Home')" id="defaultOpen">Home</button>
+    <a href = "C:/Users/krist/OneDrive/Documents/roadrunners/CampusMap.html">
+    <button class = "tablinks" onclick="openTab(event, 'Campus Map')">Campus Map</button>
+    <a href = "C:/Users/krist/OneDrive/Documents/roadrunners/Clubs.html">
+    <button class = "tablinks" onclick="openTab(event, 'Clubs')">Clubs</button>
+    <a href = "C:/Users/krist/OneDrive/Documents/roadrunners/Connections.html">
+    <button class = "tablinks" onclick="openTab(event, 'Connections')">Connections</button>
+    <a href = "C:/Users/krist/OneDrive/Documents/roadrunners/Basics.html">
+    <button class = "tablinks" onclick="openTab(event, 'Basics')">Basics</button>
+    <a href = "C:/Users/krist/OneDrive/Documents/roadrunners/PostingBoard.html">
+    <button class = "tablinks" onclick="openTab(event, 'Posting Board')">Posting Board</button> </a>
+  </center>
+</div>
+
+<div id="Posting Board" class = "tabcontent">
+<p>
+  <meta charset="UTF-8">
+  <title>Allow Posting by Users</title>
+  <link rel = "stylesheet"
+  type = "text/css"
+  href = "csStd.css" />
+  <style type = "text/css">
+   label {
+   float: left;
+   width: 10em;
+   clear: left;
+   text-align: right;
+   padding-right: 1em;
+   }
+   input, select, textarea {
+   float: left;
+   width: 20em;
+   }
+   button {
+   display: block;
+   clear: both;
+   margin: auto;
+   }
+   </style>
+  </head>
+  <body>
+   <div id = "all">
+   <div id = "heading">
+     <center>
+    <h1>Welcome to the Posting Board!</h1>
+  </center>
+   </div>
+   <div class = "content">
+    <form action = "buildBlock.php"
+     method = "post">
+    <fieldset>
+     <label>Event Name</label>
+     <input type = "Event Name"
+       name = "Event Name" />
+     <label>Location</label>
+     <input name = "Location">
+     <label>Description</label>
+     <input type = "Description"
+       name = "Description" />
+     <label>Time</label>
+     <input type = "Time"
+      name = "Time" />
+     <button type = "submit">
+     submit
+     </button>
+    </fieldset>
+    </form>
+   </div>
+   </div>
+</p>
+</div>
