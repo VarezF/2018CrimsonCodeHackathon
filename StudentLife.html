@@ -3,28 +3,59 @@
 
 <head>
     <title>StudentLife</title>
-    <center>
-        <h1> Welcome to StudentLife! </h1>
-    </center>
-
 </head>
 
-<body text = "white" bgcolor = "black">
-  <p> <span style= "text-align: left;">Washington State University</span> <span style= "float:right;"> Whitworth University</span></p>
-  <img src = "C:\Users\krist\OneDrive\Documents\CrimsonCode/WSU.png" alt = "WSU" width = "500" height = "300" border = "3" align = "left"/> <img src = "C:\Users\krist\OneDrive\Documents\CrimsonCode\Whitworth.png" alt = "" width = "600" height = "250" border = "3" align = "right"/>
-
-    <center>
-      <h2>Information about the WSU and WU Campus!</h2>
-
-    </center>
       <div class = "tab">
       <center>
-        <button class = "tablinks" onclick="openTab(event, 'Campus Map')" id ="defaultOpen">Campus Map</button>
-        <button class = "tablinks" onclick="openTab(event, 'Clubs')" id ="defaultOpen">Clubs</button>
-        <button class = "tablinks" onclick="openTab(event, 'Connections')" id ="defaultOpen">Connections</button>
-        <button class = "tablinks" onclick="openTab(event, 'Basics')" id ="defaultOpen">Basics</button>
-        <button class = "tablinks" onclick="openTab(event, 'Posting Board')" id ="defaultOpen">Posting Board</button>
+        <button class = "tablinks" onclick="openTab(event, 'Home')" id="defaultOpen">Home</button>
+        <button class = "tablinks" onclick="openTab(event, 'Campus Map')">Campus Map</button>
+        <button class = "tablinks" onclick="openTab(event, 'Clubs')">Clubs</button>
+        <button class = "tablinks" onclick="openTab(event, 'Connections')">Connections</button>
+        <button class = "tablinks" onclick="openTab(event, 'Basics')">Basics</button>
+        <button class = "tablinks" onclick="openTab(event, 'Posting Board')">Posting Board</button>
       </center>
 
+<div id="Home" class="tabcontent">
+  <center>
+      <h1> Welcome to StudentLife! </h1>
+  </center>
+  <body text = "white" bgcolor = "black">
+    <p> <span style= "text-align: left;">Washington State University</span> <span style= "float:right;"> Whitworth University</span></p>
+    <img src = "C:\Users\krist\OneDrive\Documents\CrimsonCode/WSU.png" alt = "WSU" width = "500" height = "300" border = "3" align = "left"/> <img src = "C:\Users\krist\OneDrive\Documents\CrimsonCode\Whitworth.png" alt = "" width = "600" height = "250" border = "3" align = "right"/>
+
+      <center>
+        <h2>Information about the WSU and WU Campus!</h2>
+      </center>
+</div
+<div id="Campus Map" class= "tabcontent">
+</div>
+<div id="Clubs" class = "tabcontent">
+</div>
+<div id="Connections" class = "tabcontent">
+</div>
+<div id="Basics" class = "tabcontent">
+</div>
+<div id="Posting Board" class = "tabcontent">
+</div>
+
+<script>
+  function openTab(evt, tabName)
+  {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsbyClassName("tabcontent");
+    for(i=0, i<tabcontent.link; i++)
+    {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsbyClassName("tablinks");
+    for(i = 0; i<tablinks.length; i++)
+    {
+      tablinks[i].className=tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(tabname).style.display = "block";
+    evt.currentTarget.className += "active";
+    }
+    document.getElementsById("defaultOpen").click();
+</script>
 </body>
 </html>
