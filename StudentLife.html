@@ -10,17 +10,21 @@
 </head>
 
 <body text = "white" bgcolor = "black">
-  <p> "Washington State University" </p> 
-  <img src = "C:\Users\krist\OneDrive\Documents\CrimsonCode/WSU.png" alt = "WSU" width = "500" height = "300" border = "3" align = "left"/> <img src = "C:\Users\krist\OneDrive\Documents\CrimsonCode\Whitworth.png" alt = "" width = "500" height = "200" border = "3" align = "right"/>
+  <p> <span style= "text-align: left;">Washington State University</span> <span style= "float:right;"> Whitworth University</span></p>
+  <img src = "C:\Users\krist\OneDrive\Documents\CrimsonCode/WSU.png" alt = "WSU" width = "500" height = "300" border = "3" align = "left"/> <img src = "C:\Users\krist\OneDrive\Documents\CrimsonCode\Whitworth.png" alt = "" width = "600" height = "250" border = "3" align = "right"/>
 
     <center>
       <h2>Information about the WSU and WU Campus!</h2>
+
     </center>
-    <p>
-      <a Campus Map = "CampusMap.html"  target= = "_blank" </a>
-      <a Clubs = "Clubs.HTML" target = "_blank" </a>
-      <a Connections = "Connections.html" target = "_blank" </a>
-      <a Basics = "Basics.html" target = "_blank" </a>
-    </p>
+      <div class = "tab">
+      <center>
+        <button class = "tablinks" onclick="openTab(event, 'Campus Map')" id ="defaultOpen">Campus Map</button>
+        <button class = "tablinks" onclick="openTab(event, 'Clubs')" id ="defaultOpen">Clubs</button>
+        <button class = "tablinks" onclick="openTab(event, 'Connections')" id ="defaultOpen">Connections</button>
+        <button class = "tablinks" onclick="openTab(event, 'Basics')" id ="defaultOpen">Basics</button>
+        <button class = "tablinks" onclick="openTab(event, 'Posting Board')" id ="defaultOpen">Posting Board</button>
+      </center>
+
 </body>
 </html>
