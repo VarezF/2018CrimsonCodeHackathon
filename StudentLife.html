@@ -10,11 +10,9 @@
     function myFunction($i) {
 
       console.log("myFunction called successfully. Called: " + $i);
-
       var major = ["Computer Science", "Mathematics"];
-      console.log(major[$i]);
-      //var cookieValue = escape(major[$i]);
-      //document.cookie = "major=" + cookieValue;
+      var localValue = localStorage.setItem('major', major[$i]);
+      console.log(localValue);
     }
     </script>
 </head>
@@ -32,7 +30,7 @@
 
       <div class = "tab">
         <center>
-          <a href = "Home.html">
+          <a href = "StudentLife.html">
           <button class = "tablinks" onclick="openTab(event, 'Home')" id="defaultOpen">Home</button>
           <a href = "CampusMap.html">
           <button class = "tablinks" onclick="openTab(event, 'Campus Map')">Campus Map</button>
