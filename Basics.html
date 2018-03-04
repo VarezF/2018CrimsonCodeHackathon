@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-   <meta charset="UTF-8">
-   <title>Build new block</title>
+   <!-- <meta charset="UTF-8"> -->
+   <title>StudentLife - Home</title>
    <link rel="icon" type="image/png" href="sl.png" />
    <link rel = "stylesheet"
     type = "text/css"
@@ -25,6 +25,25 @@
    margin: auto;
    }
    </style>
+   <style>
+   .button {
+   background-color: #505050;
+   border: none;
+   color: white;
+   padding: 15px 32px;
+   text-align: center;
+   text-direction: none;
+   display: inline-block;
+   font-size: 16px;
+   margin: 4px 2px;
+   curson: pointer;
+   }
+   .h2 {
+     font-family: Arial;
+     font-style: italic;
+     color: white;
+   }
+   </style>
   </head>
 
   <!-- <body text = "black" bgcolor = "FireBrick"> -->
@@ -32,14 +51,13 @@
   <script>
   function output(thisValue)
   {
-    // thisValue.style.backgroundColor="red";
     var value = thisValue.value;
     if (value == 1)
     {
       // TODO: Separate pages to different HTML files (e.g. Whitworth.html) and then redirect using:
       // document.href = "./Whitworth.html";
-
-      document.write("Whitworth:")
+      // document.href = "WhitworthFood.html";
+      document.write("Whitworth:");
       document.write("<br>");
       document.write("Saga: 7am-9pm");
       document.write("<br>");
@@ -63,6 +81,21 @@
       document.write("<br>");
       document.write("<br>");
       document.write("5) The grill has great jamba juice");
+      document.write("<br>");
+      document.write("<br>");
+      document.write("6) Late night is free during finals week")
+      document.write("<br>");
+      document.write("<br>");
+      document.write("6) Late night is free during finals week")
+      document.write("<br>");
+      document.write("<br>");
+      document.write("7) Food is always good if it is a Why Whitworth Day")
+      document.write("<br>");
+      document.write("<br>");
+      document.write("8) If you want to sneak food out, bring tupperware in a purse")
+      document.write("<br>");
+      document.write("<br>");
+      document.write("9) Makes friends with Nancy, she's awesome")
       document.write("<br>");
       document.write("<br>");
       document.write("6) Late night is free during finals week")
@@ -117,13 +150,23 @@
     }
 
     // Set background color after document.write to ensure it remains
-    document.bgColor = "red";
+    document.bgColor ="white";
+
   }
   </script>
 
-  <body class="body" style="background: FireBrick">
+    <body text = "white" bgcolor = "black">
+      <div id="index" class="tabcontent">
+        <body text = "white" bgcolor = "black">
+          <!--<p> <span style= "margin-left: 1.6em;">Washington State University</span> <span style= "margin-right: 1.6em;"> Whitworth University</span></p>-->
+          <img src = "wsu.png" alt = "WSU" width = "260" height = "260" border = "0" align = "left" /> <img src = "whitworth.png" alt = "WU" width = "260" height = "260" border = "0" align = "right" />
+      </div>
+
+      <center> <img src="studentlife.png" />
+        <h2 class="h2">Information about the WSU and WU Campuses!</h2>
+      </center>
     <!-- Header -->
-    <div class = "tab">
+    <!-- <div class = "tab">
       <center>
         <a href = "index.html">
         <button class = "tablinks" onclick="openTab(event, 'Home')" id="defaultOpen">Home</button>
@@ -136,12 +179,26 @@
         <a href = "PostingBoard.html">
         <button class = "tablinks" onclick="openTab(event, 'Posting Board')">Posting Board</button> </a>
       </center>
+    </div> -->
+    <div class = "tab">
+      <center>
+        <a href="index.html">
+        <button class = "button">Home</button></a>
+        <a href = "CampusMap.html">
+        <button class = "button" onclick="openTab(event, 'Campus Map')">Campus Map</button></a>
+        <a href = "Clubs.html">
+        <button class = "button" onclick="openTab(event, 'Clubs')">Clubs</button>
+        <a href = "PostingBoard.html">
+        <button class = "button" onclick="openTab(event, 'Posting Board')">Posting Board</button> </a>
+        <a href = "Basics.html">
+        <button class = "button" onclick="openTab(event, 'Basics')">Basics</button></a>
+      </center>
     </div>
 
     <!-- Content -->
     <div id = "all">
     <div id = "heading">
-    <p><p><p><p>
+    <p> <hr /> <brk /> </p>
     <center>
     <font size = 20px>Facts and 101</font>
   </center>
@@ -152,7 +209,7 @@
         <p><p><p><p>
         <center>
         <font size = 10px>Categories</font><p>
-        <select id="selection" onchange="output(this)">
+        <select id="selection"onchange="output(this)">
           <option value="">Select option</option>
           <option value = "1">Food </option>
           <option value = "2">Parking</option>
