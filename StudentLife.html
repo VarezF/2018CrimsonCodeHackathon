@@ -5,6 +5,15 @@
 
 <head>
     <title>StudentLife</title>
+
+    <script>
+    function myFunction($i) {
+      console.log("myFunction called successfully. Called: " + $i);
+      var major = ["Computer Science", "Mathematics"];
+      var cookieValue = escape(major[$i]);
+      document.cookie = "major=" + cookieValue;
+    }
+    </script>
 </head>
 <div id="Home" class="tabcontent">
   <body text = "white" bgcolor = "black">
@@ -40,10 +49,10 @@
         method = "">
         <fieldset>
           <level>Majors</label>
-            <select name = "blockType">
-              <option value = "0">(SELECT)</option>
-              <option value = "1">Computer Science</option>
-              <option value = "2">Mathematics</option>
+            <select id = "selectBox" onchange="myFunction(value);">
+              <option value = "">(SELECT)</option>
+              <option value = "0">Computer Science</option>
+              <option value = "1">Mathematics</option>
             </select>
           </fieldset>
         </form>
