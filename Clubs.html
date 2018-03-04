@@ -2,11 +2,56 @@
 <head>
   <title>StudentLife - Clubs</title>
   <link rel="icon" type="image/png" href="sl.png" />
+
+  <style>
+  .button {
+  background-color: #505050;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-direction: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  curson: pointer;
+  }
+  .h2 {
+    font-family: Arial;
+    font-style: italic;
+    color: white;
+  }
+  </style>
+
 </head>
-<body text = "Black" bgcolor = "FireBrick">
+<body text = "white" bgcolor = "black">
 
+  <div id="index" class="tabcontent">
+    <body text = "white" bgcolor = "black">
+      <!--<p> <span style= "margin-left: 1.6em;">Washington State University</span> <span style= "margin-right: 1.6em;"> Whitworth University</span></p>-->
+      <img src = "wsu.png" alt = "WSU" width = "260" height = "260" border = "0" align = "left" /> <img src = "whitworth.png" alt = "WU" width = "260" height = "260" border = "0" align = "right" />
+  </div>
 
-  <div class = "tab">
+  <center> <img src="studentlife.png" />
+    <h2 class="h2">Information about the WSU and WU Campuses!</h2>
+  </center>
+
+        <div class = "tab">
+          <center>
+            <a href="index.html">
+            <button class = "button">Home</button></a>
+            <a href = "CampusMap.html">
+            <button class = "button" onclick="openTab(event, 'Campus Map')">Campus Map</button></a>
+            <a href = "Clubs.html">
+            <button class = "button" onclick="openTab(event, 'Clubs')">Clubs</button>
+            <a href = "PostingBoard.html">
+            <button class = "button" onclick="openTab(event, 'Posting Board')">Posting Board</button> </a>
+            <a href = "Basics.html">
+            <button class = "button" onclick="openTab(event, 'Basics')">Basics</button></a>
+          </center>
+        </div>
+
+  <!--<div class = "tab">
     <center>
       <a href = "index.html">
       <button class = "tablinks" onclick="openTab(event, 'Home')" id="defaultOpen">Home</button>
@@ -19,13 +64,8 @@
       <a href = "PostingBoard.html">
       <button class = "tablinks" onclick="openTab(event, 'Posting Board')">Posting Board</button> </a>
     </center>
-  </div>
-
-  <html>
-    <head>
-      <title>Clubs</title>
-    </head>
-    <body>
+  </div>-->
+<br /><br /><br />
       <div>
           <ul class ="columns" data-columns="2">
       <li>

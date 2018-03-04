@@ -3,7 +3,26 @@
 
 <head>
     <title>StudentLife - Home</title>
-    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="icon" type="image/png" href="sl.png" />
+
+    <style>
+    .button {
+    background-color: #505050;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-direction: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    curson: pointer;
+    }
+    .h2 {
+      font-family: Arial;
+      font-style: italic;
+    }
+    </style>
 
     <script>
     function chooseInterest($i){
@@ -24,32 +43,30 @@
 <body>
 <div id="index" class="tabcontent">
   <body text = "white" bgcolor = "black">
-    <p> <span style= "text-align: left;">Washington State University</span> <span style= "float:right;"> Whitworth University</span></p>
+    <!--<p> <span style= "margin-left: 1.6em;">Washington State University</span> <span style= "margin-right: 1.6em;"> Whitworth University</span></p>-->
     <img src = "wsu.png" alt = "WSU" width = "260" height = "260" border = "0" align = "left" /> <img src = "whitworth.png" alt = "WU" width = "260" height = "260" border = "0" align = "right" />
-
-      <center>
-        <h2>Information about the WSU and WU Campuses!</h2>
-      </center>
 </div>
 
-<center> <img src="studentlife.png" /> </center>
+<center> <img src="studentlife.png" />
+  <h2 class="h2">Information about the WSU and WU Campuses!</h2>
+</center>
 
       <div class = "tab">
         <center>
-          <a href = "index.html">
-          <button class = "tablinks" onclick="openTab(event, 'index')" id="defaultOpen">Home</button></a>
+          <!--Don't include link to "Home" since already on "Home"-->
+          <button class = "button">Home</button></a>
           <a href = "CampusMap.html">
-          <button class = "tablinks" onclick="openTab(event, 'Campus Map')">Campus Map</button></a>
+          <button class = "button" onclick="openTab(event, 'Campus Map')">Campus Map</button></a>
           <a href = "Clubs.html">
-          <button class = "tablinks" onclick="openTab(event, 'Clubs')">Clubs</button>
-          <a href = "Basics.html">
-          <button class = "tablinks" onclick="openTab(event, 'Basics')">Basics</button></a>
+          <button class = "button" onclick="openTab(event, 'Clubs')">Clubs</button>
           <a href = "PostingBoard.html">
-          <button class = "tablinks" onclick="openTab(event, 'Posting Board')">Posting Board</button> </a>
+          <button class = "button" onclick="openTab(event, 'Posting Board')">Posting Board</button> </a>
+          <a href = "Basics.html">
+          <button class = "button" onclick="openTab(event, 'Basics')">Basics</button></a>
         </center>
       </div>
       <p> <hr /> <brk /> </p>
-      <center> <h2> Club Finder Tool: </h2> </center>
+      <center> <h2 class="h2"> Club Finder Tool: </h2> </center>
       <p> <brk /> </p>
       <div class = "content">
 
@@ -57,8 +74,8 @@
           <level>Select School:</label>
             <select id = "selectBox" onchange="chooseSchool(value);">
               <option value = "">(NOTHING SELECTED)</option>
-              <option value = "0">Washington State University</option>
-              <option value = "1">Whitworth University</option>
+              <option value = "0">Washington State University (WSU)</option>
+              <option value = "1">Whitworth University (WU)</option>
             </select>
       </center>
       </div>
@@ -83,15 +100,16 @@
               <option value = "12">Physical and Mathematical Sciences</option>
               <option value = "13">Pre-Professional Studies</option>
               <option value = "14">Social Sciences</option>
-              <option value = "15">Sports and Fitness</option>
+              <option value = "15">Sport and Fitness</option>
             </select>
             <p> <brk /> </p>
             <!-- <input type="Submit" value="Go Clubbing">* -->
             <a href = "Results.html">
-            <button class = "tablinks" onclick="openTab(event, 'Results')">Go Clubbing</button>
+            <button class = "tablinks" onclick="openTab(event, 'Results'); alert("passed")">Go Clubbing</button>
           </center>
 
 <script>
+
   function openTab(evt, tabName) {
 
     var i, tabcontent, tablinks;
@@ -112,6 +130,7 @@
     evt.currentTarget.className += "active";
     }
     document.getElementById("defaultOpen").click();
+
 </script>
 </body>
 </html>
