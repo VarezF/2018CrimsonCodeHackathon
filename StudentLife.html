@@ -7,7 +7,6 @@
     <title>StudentLife</title>
 
     <script>
-<<<<<<< HEAD
     function chooseInterest($i){
       localStorage.setItem('interest',$i);
       var interest = localStorage.getItem('interest');
@@ -19,14 +18,6 @@
       var school = localStorage.getItem('school');
       console.log(school);
       console.log($s);
-=======
-    function myFunction($i) {
-
-      console.log("myFunction called successfully. Called: " + $i);
-      var major = ["Computer Science", "Mathematics"];
-      var localValue = localStorage.setItem('major', major[$i]);
-      console.log(localValue);
->>>>>>> 7ff6a82a1963198f3575055b294abda421c18e71
     }
     </script>
 </head>
@@ -56,28 +47,22 @@
           <button class = "tablinks" onclick="openTab(event, 'Posting Board')">Posting Board</button> </a>
         </center>
       </div>
-
+      <p> <brk /> </p>
+      <center> <h2> Club Finder Tool: </h2> </center>
+      <p> <brk /> </p>
       <div class = "content">
         <center>
-        <form action = "buildBlock.php"
-        method = "">
-        <fieldset>
           <level>Select School:</label>
             <select id = "selectBox" onchange="chooseSchool(value);">
               <option value = "">(NOTHING SELECTED)</option>
-              <option value = "0">WSU</option>
-              <option value = "1">WU</option>
+              <option value = "0">Washington State University</option>
+              <option value = "1">Whitworth University</option>
             </select>
-          </fieldset>
-        </form>
       </center>
       </div>
-
+      <p> <brk /> </p>
       <div class = "content">
         <center>
-        <form action = "buildBlock.php"
-        method = "">
-        <fieldset>
           <level>Select Interests:</label>
             <select id = "selectBox" onchange="chooseInterest(value);">
               <option value = "">(NOTHING SELECTED)</option>
@@ -98,8 +83,6 @@
               <option value = "14">Social Sciences</option>
               <option value = "15">Sport and Fitness</option>
             </select>
-          </fieldset>
-        </form>
       </center>
       </div>
 
