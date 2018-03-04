@@ -10,8 +10,8 @@
     function myFunction($i) {
       console.log("myFunction called successfully. Called: " + $i);
       var major = ["Computer Science", "Mathematics"];
-      var cookieValue = escape(major[$i]);
-      document.cookie = "major=" + cookieValue;
+      var localValue = localStorage.setItem('major', major[$i]);
+      console.log(localStorage);
     }
     </script>
 </head>
