@@ -6,7 +6,6 @@
     <link rel="icon" type="image/png" href="favicon.png" />
 
     <script>
-<<<<<<< HEAD
     function chooseInterest($i){
       localStorage.setItem('interest',$i);
       var interest = localStorage.getItem('interest');
@@ -18,14 +17,6 @@
       var school = localStorage.getItem('school');
       console.log(school);
       console.log($s);
-=======
-    function myFunction($i) {
-
-      console.log("myFunction called successfully. Called: " + $i);
-      var major = ["Computer Science", "Mathematics"];
-      var localValue = localStorage.setItem('major', major[$i]);
-      console.log(localValue);
->>>>>>> 7ff6a82a1963198f3575055b294abda421c18e71
     }
     </script>
 </head>
@@ -50,13 +41,7 @@
           <a href = "CampusMap.html">
           <button class = "tablinks" onclick="openTab(event, 'Campus Map')">Campus Map</button></a>
           <a href = "Clubs.html">
-<<<<<<< Updated upstream
           <button class = "tablinks" onclick="openTab(event, 'Clubs')">Clubs</button>
-=======
-          <button class = "tablinks" onclick="openTab(event, 'Clubs')">Clubs</button></a>
-          <a href = "Connections.html">
-          <button class = "tablinks" onclick="openTab(event, 'Connections')">Connections</button></a>
->>>>>>> Stashed changes
           <a href = "Basics.html">
           <button class = "tablinks" onclick="openTab(event, 'Basics')">Basics</button></a>
           <a href = "PostingBoard.html">
@@ -65,13 +50,7 @@
       </div>
 
       <div class = "content">
-<<<<<<< Updated upstream
-        <center>
-        <form action = "buildBlock.php"
-        method = "">
-=======
         <form action = "buildBlock.php" method = "">
->>>>>>> Stashed changes
         <fieldset>
           <level>Select School:</label>
             <select id = "selectBox" onchange="chooseSchool(value);">
@@ -79,20 +58,13 @@
               <option value = "0">WSU</option>
               <option value = "1">WU</option>
             </select>
-            <input type="submit" value="submit">
           </fieldset>
         </form>
       </center>
       </div>
 
       <div class = "content">
-<<<<<<< Updated upstream
-        <center>
-        <form action = "buildBlock.php"
-        method = "">
-=======
         <form action = "buildBlock.php" method = "">
->>>>>>> Stashed changes
         <fieldset>
           <level>Select Interests:</label>
             <select id = "selectBox" onchange="chooseInterest(value);">
@@ -114,7 +86,6 @@
               <option value = "14">Social Sciences</option>
               <option value = "15">Sport and Fitness</option>
             </select>
-            <input type="submit" value="submit">
           </fieldset>
         </form>
       </center>
