@@ -1,366 +1,52 @@
+<!DOCTYPE HTML>
 <html>
-<body text = "Black" bgcolor = "FireBrick">
-<title>StudentLife - Clubs</title>
+<head>
+  <title> Results </title>
+  <script>
+    var school = localStorage.getItem('school');
+    var interest = localStorage.getItem('interest');
+    console.log(school);
+    console.log(interest);
+    var WUClubArr = new Array(17);
+    WUClubArr[0] = NULL;
+    WUClubArr[1] = "Artists' Cooperative";
+    WUClubArr[2] = NULL;
+    WUClubArr[3] = "Business Club\nSocial Finance Club\nStudent Investment Group";
+    WUClubArr[4] = "UMOJA - African Culture Club\nWestminster Round";
+    WUClubArr[5] = NULL;
+    WUClubArr[6] = NULL;
+    WUClubArr[7] = NULL;
+    WUClubArr[8] = "Black Student Union\nFASA (Filipino-American Student Association)\nH.O.L.A (Heritage of Latino Americans)\nInternational Club\nNā Puʻuwai ʻo Hawaiʻi";
+    WUClubArr[9] = "Pre-Med/Science Club";
+    WUClubArr[10] = "History Club\nCatholic Fellowship\nEn Christo\nStudents for Life\nYoung Americans for Freedom";
+    WUClubArr[11] = "Band of Whitworth Pirates (Pep-Band)\nVocal Jazz Ensemble\nExceptional Praise Gospel Choir";
+    WUClubArr[12] = "The Physics and Engineering Collective";
+    WUClubArr[13] = "Alzheimer's Club\nChemistry and Other Sciences\nKipos: Students Advocating Environmental Justice";
+    WUClubArr[14] = "Psi Chi/Psychology Club";
+    WUClubArr[15] = "Athletic Training Club\nClimbing Club\nClub Basketball\nFitness Club\nJubilation Dance Ministry\nSpikeball\nSwing and Ballroom Dance Club\nUltimate Frisbee Club";
+    WUClubArr[16] = "APIS Bee Club\nGaming Club\nGWH Students for Academia\nPirate PRIDE\nPokemon Trainers\nSmash Bros\nUnited States Institute for Theatre Technology\nSpokane Dream Project\nSpokane Guilds' School Pirate Advisory Board";
 
-  <div class = "tab">
-    <center>
-      <a href = "index.html">
-      <button class = "tablinks" onclick="openTab(event, 'Home')" id="defaultOpen">Home</button>
-      <a href = "CampusMap.html">
-      <button class = "tablinks" onclick="openTab(event, 'Campus Map')">Campus Map</button>
-      <a href = "Clubs.html">
-      <button class = "tablinks" onclick="openTab(event, 'Clubs')">Clubs</button>
-      <a href = "Basics.html">
-      <button class = "tablinks" onclick="openTab(event, 'Basics')">Basics</button>
-      <a href = "PostingBoard.html">
-      <button class = "tablinks" onclick="openTab(event, 'Posting Board')">Posting Board</button> </a>
-    </center>
-  </div>
+    var WSUClubArr = new Array(100);
+    WSUClubArr[0] = "Agricultural Automation and Engineering Club\nAgricultural Education Club\nAgriculture\nTechnology & Management Club\nAnimal Sciences Graduate Student Association\nButches Baking Club\nCollegiate Young Farmers and Ranchers\nCrop and Soil Sciences Graduate Club\nCulinary Cougs\nCVM Agricultural Animal Club\nDairy Club\nFood Engineering Club\nFood Science Club\nHorticulture Club";
+    WSUClubArr[1] = "Art Club\nAmerican Society of Interior Designers\nAmerican Society of Landscaping Architects\nMasters of Design\nPhotography Club\nYarn Club";
+    WSUClubArr[2] = "American Veterinary Dental Society\nAnimal Behavior Club\nBiology Club\nBiology Graduate Students Association\nCollege of Arts and Sciences Student Ambassadors\nCanine Club\nCompanion Animal Club\nCVM Zoo, Exotics Clubs\nCollege of veterinary Medicine Pathology Club\nCollege of veterinary Medicine- Small Ruminant Club\nCougar Health Awareness Team\nEnvironmental Science Club\nForestry Club\nGeology Club\nMolecular Biosciences Club\nMolecular Biosciences Graduate Student\nClub\nMolecular Plant Sciences Graduate Organization\nPlant Pathology Graduate Student Organization\nRenewable Energy Organization\nTheriogenology Club\nveterinary Business Management Association\nveterinary Law and Ethics\nveterinary Medicine Orthopedic & Sport Medicine Club\nZoology Club\nWater Resources Club\nWildlife Society";
+    WSUClubArr[3] = "Advertising Club\nAmerican Civil Liberties Union Student Club of Washington State\nCarson College of Business Student Ambassadors\nInternational Business Club\nInternational Development Club\nPolitical Science Club\nPublic Relations Student Society of America\nSport Management Club\nStudent Veteran and Emergency Care Society";
+    WSUClubArr[4] = "American Sign Language Club\nEnglish Graduate Organization\nMen For Social Change\nPsychology Club\nThe English Club\nSpeech and Hearing Science Club";
+    WSUClubArr[5] = "Economics Club\nThe Marketing Club";
+    WSUClubArr[6] = "Aerospace Club\nAmerican Chemical Society\nAmerican Institute of Chemical Engineers\nAmerican Society of Civil Engineers\nApplication Development Club\nAssociated Students of Construction Management\nAssociation for Computing Machinery\nAudio Engineering Club\nAutomotive Enthusiast Club\nBiomass Engineering Club\nBiomedical Engineering Society\nBroadening Participation in Computing\nComputer Security Group\nCougs in Cyber\nCougs in Space\nCVM Radiology Club\nEngineers Without Borders\nInstitute of Electrical and Electronic Engineers (IEEE)\nLinux Users Group\nMaterial Advantage\nMath Club\nQueer Science, Technology, Engineering, and Math Diversity\nRoboSub\nRobotics Club\nScientista\nSociety for the Advancement of Material and Process\nSociety of Latinx Engineers and Scientists\nSociety of Women Engineers\nSoftware as a Service Club\nWashington Technology Student Association\nWorld Computer Exchange";
+    WSUClubArr[7] = "African Friendship Association\nAmerican Indian Science and Engineering Society\nArabic Language & Culture Organization\nAsian Pacific American Student Coalition\nAsian Pop Culture Club\nAssociation for Bangladeshi Students & Scholars\nAssociation for Latino Professionals for America\nAssociation of Pacific and Asian Women\nAssociation of Russian Culture Learners\nChicana/o Latina/o Student Alliance\nChinese Students and Scholars Association\nFrench Club\nHillel - Jewish Student Organization\nHong Kong Student Organization\nInternational Students Council\nInternational veterinary Student Association\nJapanese Student Association\nNative Americans Women's Association\nNepali Students Association\nIndian Students Organization\nIndonesian Students Organization\nKorean Student Association\nNational Society of Black Engineers\nNigerian Students and Scholars Organization\nPacific Islanders Club\nPanhellenic Council\nSaudi Club\nSikh Student Association\nTaiwanese Student Organization\nTurkish Student and Scholars Association\nUnited Greek Council\nVietnamese Student Organization";
+    WSUClubArr[8] = "American Medical Association\nNeuroscience Club\nOptometric Physicians of Tomorrow (WSU)";
+    WSUClubArr[9] = "History Club";
+    WSUClubArr[10] = "Choral Company\nCougar Marching Band\nLow Brass Collective\nOrgan Club\nSociety of Composers";
+    WSUClubArr[11] = "Actuarial Science Club\nPhysics and Astronomy Club\nPyromaniacs Clay Club";
+    WSUClubArr[12] = "Minority Association for Pre-health Students\nMinority Association of Pre-law\nMock Trial @ WSU\nPre-dental Club\nPre-Health Club\nPre-Law Society\nPre-Nutrition and Exercise Physiology Club\nPre-Pharmacy Club\nPre-physical/Occupation Therapy Club\nPre-Physician Assistant Club\nPre-Vet Club\nPrevention Science Graduate Student Organization\nPho Nu Pre-Nursing Club";
+    WSUClubArr[13] = "Anthropology Club\nHuman Development Club\nSociology Club";
+    WSUClubArr[14] = "Aerial Dance Society\nAthletic Training Club\nArchery\nArmy ROTC\nBrazilian Jiu Jitsu Club\nCamp Adventure at WSU\nCollegiate Horsemen�s Club\nCougar Marksmanship Club\nElectric Longboard Club\nEsports Club\nFloor Hockey Club\nFly Fishing and Conservation Club\nGun Club\nHumans vs Zombies\nJudo Club\nKendo Club\nKinesiology Club\nKu-Ah-Mah\nKyokushin Karate Club\nLatin Dance Club\nPalouse Bicycles Collective\nRoller Hockey Club\nSportsman�s Club\nSwing it Out\nWSU Badminton Club\nWSU Baseball\nWSU Bowling\nWSU Chess\nWSU Cricket Club\nWSU CVM Aquatics Club\nWSU CVM Lab Animal Medicine Club\nWSU Cycling Club\nWSU Equestrian Club\nWSU Fencing Club\nWSU Horse Polo Club\nWSU Men's Ice Hockey Club\nWSU Men's Lacrosse Club\nWSU Men's Rugby\nWSU Men's Soccer Club\nWSU Men's Volleyball Club\nWSU Ski Club\nWSU Softball Club\nWSU Swim Club\nWSU Tae Kwon Do\nWSU Tennis Club\nWSU Ultimate Club\nWSU Wakeboard-Waterski Club\nWSU Water Polo Club\nWSU Women's Ice Hockey\nWSU Women's Lacrosse Club\nWSU Women's Rugby Club\nWSU Women's Soccer Club\nWSU Women's Volleyball Club\nWSU Wrestling Club";
+    WSUClubArr[15] = "Anime Club\nAssociated Students of Washington State University (ASWSU)\nBeekeeping Club\nBlack Graduate Student Association\nBlack Men Making A Difference\nBlack Student Union\nBlack Women's Caucus\nCampus Christian Fellowship\nCoalition for Women Students\nCollege Republicans\nCollege Success Scholars Club\nCougar Crew\nCougar Marching Band\nEntomology Graduate Student Association\nGeneration One Club\nGift of Life Club\nHonor Society\nKorean Christian Student Association\nLatter Day Saint Organization\nLeague of Legends @ WSU\nMuslim Student Association\nNational Society of Minorities in Hospitality\nNavel Reserve Officer Training Corp\nOur Revolution Young progressives\nPokemon Club\nRaptor Club\nSmash Bros @ WSU\nSnoqualmie Valley Kiwanis Club\nStudents for Christ\nTabletop Gaming Association\nThe Criminal Justice Club\nTransfer Student Alliance\nUndergraduate Research Club\nVegWSU\nWashington State Outings Club\nWorld Peace Buddhist Club\nYoung Democrats of WSU\nZZU CRU";
+  </script>
+</head>
+<body>
 
-  <html>
-    <head>
-      <title>Clubs</title>
-    </head>
-    <body>
-      <div>
-          <ul class ="columns" data-columns="2">
-      <li>
-      <div id='WSU CLUBS'>
-      <h1>WSU Clubs (Alphabetical)</h1>
-      <div id="a">
-      <ul>
-<!-- Agricultural Sciences: -->
-        <li>Agricultural Automation and Engineering Club</li>
-        <li>Agricultural Education Club</li>
-        <li>Agriculture Technology & Management Club</li>
-        <li>Animal Sciences Graduate Student Association</li>
-        <li>Butches Baking Club</li>
-        <li>Collegiate Young Farmers and Ranchers</li>
-        <li>Crop and Soil Sciences Graduate Club</li>
-        <li>Culinary Cougs</li>
-        <li>CVM Agricultural Animal Club</li>
-        <li>Dairy Club</li>
-        <li>Food Engineering Club</li>
-        <li>Food Science Club</li>
-        <li>Horticulture Club</li>
-<!-- Art, Architecture, and Design: -->
-        <li>Art Club</li>
-        <li>American Society of Interior Designers</li>
-        <li>American Society of Landscaping Architects</li>
-        <li>Masters of Design</li>
-        <li>Photography Club</li>
-        <li>Yarn Club</li>
-<!-- Biological and Environmental Science: -->
-        <li>American Veterinary Dental Society</li>
-        <li>Animal Behavior Club</li>
-        <li>Biology Club</li>
-        <li>Biology Graduate Students Association</li>
-        <li>College of Arts and Sciences Student Ambassadors</li>
-        <li>Canine Club</li>
-        <li>Companion Animal Club</li>
-        <li>CVM Zoo, Exotics Clubs</li>
-        <li>College of veterinary Medicine Pathology Club</li>
-        <li>College of veterinary Medicine- Small Ruminant Club</li>
-        <li>Cougar Health Awareness Team</li>
-        <li>Environmental Science Club</li>
-        <li>Forestry Club</li>
-        <li>Geology Club</li>
-        <li>Molecular Biosciences Club</li>
-        <li>Molecular Biosciences Graduate Students Club</li>
-        <li>Molecular Plant Sciences Graduate Organization</li>
-        <li>Plant Pathology Graduate Student Organization</li>
-        <li>Renewable Energy Organization</li>
-        <li>Theriogenology Club</li>
-        <li>veterinary Business Management Association</li>
-        <li>veterinary Law and Ethics</li>
-        <li>veterinary Medicine Orthopedic & Sport Medicine Club</li>
-        <li>Zoology Club</li>
-        <li>Water Resources Club</li>
-        <li>Wildlife Society</li>
-
-<!-- Business:       -->
-        <li>Advertising Club</li>
-        <li>American Civil Liberties Union Student Club of Washington State</li>
-        <li>Carson College of Business Student Ambassadors</li>
-        <li>International Business Club</li>
-        <li>International Development Club</li>
-        <li>Political Science Club</li>
-        <li>Public Relations Student Society of America</li>
-        <li>Sport Management Club</li>
-        <li>Student Veteran and Emergency Care Society</li>
-<!-- Communication: -->
-        <li>American Sign Language Club</li>
-        <li>English Graduate Organization</li>
-        <li>Men For Social Change</li>
-        <li>Psychology Club</li>
-        <li>The English Club</li>
-        <li>Speech and Hearing Science Club</li>
-<!-- Economics: -->
-        <li>Economics Club</li>
-        <li>The Marketing Club</li>
-<!-- Engineering and Computer Science: -->
-        <li>Aerospace Club</li>
-        <li>American Chemical Society</li>
-        <li>American Institute of Chemical Engineers</li>
-        <li>American Society of Civil Engineers</li>
-        <li>Application Development Club</li>
-        <li>Associated Students of Construction Management</li>
-        <li>Association for Computing Machinery</li>
-        <li>Audio Engineering Club</li>
-        <li>Automotive Enthusiast Club</li>
-        <li>Biomass Engineering Club</li>
-        <li>Biomedical Engineering Society</li>
-        <li>Broadening Participation in Computing</li>
-        <li>Computer Security Group</li>
-        <li>Cougs in Cyber</li>
-        <li>Cougs in Space</li>
-        <li>CVM Radiology Club</li>
-        <li>Engineers Without Borders</li>
-        <li>Institute of Electrical and Electronic Engineers (IEEE)</li>
-        <li>Linux Users Group</li>
-        <li>Material Advantage</li>
-        <li>Math Club</li>
-        <li>Queer Science, Technology, Engineering, and Math Diversity</li>
-        <li>RoboSub</li>
-        <li>Robotics Club</li>
-        <li>Scientista</li>
-        <li>Society for the Advancement of Material and Process</li>
-        <li>Society of Latinx Engineers and Scientists</li>
-        <li>Society of Women Engineers</li>
-        <li>Software as a Service Club</li>
-        <li>Washington Technology Student Association</li>
-        <li>World Computer Exchange</li>
-<!-- Foreign Languages and Cultures: -->
-        <li>African Friendship Association</li>
-        <li>American Indian Science and Engineering Society</li>
-        <li>Arabic Language & Culture Organization</li>
-        <li>Asian Pacific American Student Coalition</li>
-        <li>Asian Pop Culture Club</li>
-        <li>Association for Bangladeshi Students & Scholars</li>
-        <li>Association for Latino Professionals for America</li>
-        <li>Association of Pacific and Asian Women</li>
-        <li>Association of Russian Culture Learners</li>
-        <li>Chicana/o Latina/o Student Alliance</li>
-        <li>Chinese Students and Scholars Association</li>
-        <li>French Club</li>
-        <li>Hillel - Jewish Student Organization</li>
-        <li>Hong Kong Student Organization</li>
-        <li>International Students Council</li>
-        <li>International veterinary Student Association</li>
-        <li>Japanese Student Association</li>
-        <li>Native Americans Women’s Association</li>
-        <li>Nepali Students Association</li>
-        <li>Indian Students Organization</li>
-        <li>Indonesian Students Organization</li>
-        <li>Korean Student Association</li>
-        <li>National Society of Black Engineers</li>
-        <li>Nigerian Students and Scholars Organization</li>
-        <li>Pacific Islanders Club</li>
-        <li>Panhellenic Council</li>
-        <li>Saudi Club</li>
-        <li>Sikh Student Association</li>
-        <li>Taiwanese Student Organization</li>
-        <li>Turkish Student and Scholars Association</li>
-        <li>United Greek Council</li>
-        <li>Vietnamese Student Organization</li>
-<!-- Health: -->
-        <li>American Medical Association</li>
-        <li>Neuroscience Club</li>
-        <li>Optometric Physicians of Tomorrow (WSU)</li>
-<!-- History, Literature and Philosophy: -->
-        <li>History Club</li>
-<!-- Music: -->
-        <li>Choral Company</li>
-        <li>Cougar Marching Band</li>
-        <li>Low Brass Collective</li>
-        <li>Organ Club</li>
-        <li>Society of Composers</li>
-<!-- Physical and Mathematical Sciences: -->
-        <li>Actuarial Science Club</li>
-        <li>Physics and Astronomy Club</li>
-        <li>Pyromaniacs Clay Club</li>
-<!-- Pre-Professional Students: -->
-        <li>Minority Association for Pre-health Students</li>
-        <li>Minority Association of Pre-law</li>
-        <li>Mock Trial @ WSU</li>
-        <li>Pre-dental Club</li>
-        <li>Pre-Health Club</li>
-        <li>Pre-Law Society</li>
-        <li>Pre-Nutrition and Exercise Physiology Club</li>
-        <li>Pre-Pharmacy Club</li>
-        <li>Pre-physical/Occupation Therapy Club</li>
-        <li>Pre-Physician Assistant Club</li>
-        <li>Pre-Vet Club</li>
-        <li>Prevention Science Graduate Student Organization</li>
-        <li>Pho Nu Pre-Nursing Club</li>
-<!-- Social Sciences: -->
-      <li>Anthropology Club</li>
-      <li>Human Development Club</li>
-      <li>Sociology Club</li>
-<!-- Sports and Fitness: -->
-        <li>Aerial Dance Society</li>
-        <li>Athletic Training Club</li>
-        <li>Archery</li>
-        <li>Army ROTC</li>
-        <li>Brazilian Jiu Jitsu Club</li>
-        <li>Camp Adventure at WSU</li>
-        <li>Collegiate Horsemen’s Club</li>
-        <li>Cougar Marksmanship Club</li>
-        <li>Electric Longboard Club</li>
-        <li>Esports Club</li>
-        <li>Floor Hockey Club</li>
-        <li>Fly Fishing and Conservation Club</li>
-        <li>Gun Club</li>
-        <li>Humans vs Zombies</li>
-        <li>Judo Club</li>
-        <li>Kendo Club</li>
-        <li>Kinesiology Club</li>
-        <li>Ku-Ah-Mah</li>
-        <li>Kyokushin Karate Club</li>
-        <li>Latin Dance Club</li>
-        <li>Palouse Bicycles Collective</li>
-        <li>Roller Hockey Club</li>
-        <li>Sportsman’s Club</li>
-        <li>Swing it Out</li>
-        <li>WSU Badminton Club</li>
-        <li>WSU Baseball</li>
-        <li>WSU Bowling</li>
-        <li>WSU Chess</li>
-        <li>WSU Cricket Club</li>
-        <li>WSU CVM Aquatics Club</li>
-        <li>WSU CVM Lab Animal Medicine Club</li>
-        <li>WSU Cycling Club</li>
-        <li>WSU Equestrian Club</li>
-        <li>WSU Fencing Club</li>
-        <li>WSU Horse Polo Club</li>
-        <li>WSU Men’s Ice Hockey Club</li>
-        <li>WSU Men’s Lacrosse Club</li>
-        <li>WSU Men’s Rugby</li>
-        <li>WSU Men’s Soccer Club</li>
-        <li>WSU Men’s Volleyball Club</li>
-        <li>WSU Ski Club</li>
-        <li>WSU Softball Club</li>
-        <li>WSU Swim Club</li>
-        <li>WSU Tae Kwon Do</li>
-        <li>WSU Tennis Club</li>
-        <li>WSU Ultimate Club</li>
-        <li>WSU Wakeboard-Waterski Club</li>
-        <li>WSU Water Polo Club</li>
-        <li>WSU Women's Ice Hockey</li>
-        <li>WSU Women's Lacrosse Club</li>
-        <li>WSU Women's Rugby Club</li>
-        <li>WSU Women's Soccer Club</li>
-        <li>WSU Women's Volleyball Club</li>
-        <li>WSU Wrestling Club</li>
-<!-- Other: -->
-        <li>Anime Club</li>
-        <li>Associated Students of Washington State University (ASWSU)</li>
-        <li>Beekeeping Club</li>
-
-        <li>Black Graduate Student Association</li>
-        <li>Black Men Making A Difference</li>
-        <li>Black Student Union</li>
-        <li>Black Women’s Caucus</li>
-        <li>Campus Christian Fellowship</li>
-        <li>Coalition for Women Students</li>
-        <li>College Republicans</li>
-        <li>College Success Scholars Club</li>
-        <li>Cougar Crew</li>
-        <li>Cougar Marching Band</li>
-
-        <li>Entomology Graduate Student Association</li>
-         <li>Generation One Club</li>
-        <li>Gift of Life Club</li>
-        <li>Honor Society</li>
-        <li>Korean Christian Student Association</li>
-        <li>Latter Day Saint Organization</li>
-        <li>League of Legends @ WSU</li>
-         <li>Muslim Student Association</li>
-         <li>National Society of Minorities in Hospitality</li>
-        <li>Navel Reserve Officer Training Corp</li>
-        <li>Our Revolution Young progressives</li>
-        <li>Pokémon Club</li>
-        <li>Raptor Club</li>
-        <li>Smash Bros @ WSU</li>
-        <li>Snoqualmie Valley Kiwanis Club</li>
-        <li>Students for Christ</li>
-        <li>Tabletop Gaming Association</li>
-        <li>The Criminal Justice Club</li>
-        <li>Transfer Student Alliance</li>
-        <li>Undergraduate Research Club</li>
-        <li>VegWSU</li>
-        <li>Washington State Outings Club</li>
-        <li>World Peace Buddhist Club</li>
-        <li>Young Democrats of WSU</li>
-        <li>ZZU CRU</li>
-      </ul>
-    </div>
-    </li>
-    <li>
-    <h1>Whitworth Clubs (Alphabetical)</h1>
-      <ul>
-<!-- Art: -->
-        <li>Artists' Cooperative</li>
-<!-- Athletic: -->
-        <li>Athletic Training Club</li>
-        <li>Climbing Club</li>
-        <li>Club Basketball</li>
-        <li>Fitness Club</li>
-        <li>Jubilation Dance Ministry</li>
-        <li>Spikeball</li>
-        <li>Swing and Ballroom Dance Club</li>
-        <li>Ultimate Frisbee Club</li>
-<!-- Business: -->
-        <li>Business Club</li>
-        <li>Social Finance Club</li>
-        <li>Student Investment Group</li>
-<!-- Computer/Mathematics: -->
-        <li>Association for Computing Machinery</li>
-<!-- Cultural: -->
-        <li>Black Student Union</li>
-        <li>FASA (Filipino-American Student Association)</li>
-        <li>H.O.L.A (Heritage of Latino Americans)</li>
-        <li>International Club</li>
-        <li>Nā Puʻuwai ʻo Hawaiʻi</li>
-        <li>UMOJA - African Culture Club</li>
-  <!-- English: -->
-        <li>Westminster Round</li>
-  <!-- Health: -->
-        <li>Pre-Med/Science Club</li>
-  <!-- History: -->
-        <li>History Club</li>
-  <!-- Music: -->
-        <li>Band of Whitworth Pirates (Pep-Band)</li>
-        <li>Vocal Jazz Ensemble</li>
-<!-- Physics: -->
-        <li>The Physics and Engineering Collective</li>
-<!-- Religious: -->
-        <li>Catholic Fellowship</li>
-        <li>En Christo</li>
-        <li>Students for Life</li>
-        <li>Young Americans for Freedom</li>
-        <li>Exceptional Praise Gospel Choir</li>
-<!-- Science: -->
-        <li> Alzheimer's Club</li>
-        <li>Chemistry and Other Sciences</li>
-        <li>Kipos: Students Advocating Environmental Justice</li>
-<!-- Social Sciences: -->
-        <li>Psi Chi/Psychology Club</li>
-<!-- Theater: -->
-        <li>United States Institute for Theatre Technology</li>
-<!-- Volunteer: -->
-        <li>Spokane Dream Project</li>
-        <li>Spokane Guilds' School Pirate Advisory Board</li>
-<!-- Other: -->
-        <li>APIS Bee Club</li>
-        <li>Gaming Club</li>
-        <li>GWH Students for Academia</li>
-        <li>Pirate PRIDE</li>
-        <li>Pokemon Trainers</li>
-        <li>Smash Bros</li>
-      </ul>
-    </div>
-    </li>
-  </ul>
 </body>
+
 </html>
