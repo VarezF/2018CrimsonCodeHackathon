@@ -28,14 +28,12 @@
     function chooseInterest($i){
       localStorage.setItem('interest',$i);
       var interest = localStorage.getItem('interest');
-      console.log(interest);
-      console.log($i);
+      console.log("Chosen interist: " + interest);
     }
     function chooseSchool($s) {
       localStorage.setItem('school',$s);
       var school = localStorage.getItem('school');
-      console.log(school);
-      console.log($s);
+      console.log("Chosen school: " + school);
     }
     </script>
 </head>
@@ -105,7 +103,7 @@
             <p> <brk /> </p>
             <!-- <input type="Submit" value="Go Clubbing">* -->
             <a href = "Results.html">
-            <button class = "tablinks" onclick="openTab(event, 'Results'); alert("passed")">Go Clubbing</button>
+            <button class = "tablinks" onclick="clubResults()">Go Clubbing</button>
           </center>
 
 <script>
