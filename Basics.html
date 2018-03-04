@@ -17,3 +17,49 @@
     <button class = "tablinks" onclick="openTab(event, 'Posting Board')">Posting Board</button> </a>
   </center>
 </div>
+
+<head>
+ <meta charset="UTF-8">
+ <title>Build new block</title>
+ <link rel = "stylesheet"
+  type = "text/css"
+  href = "csStd.css" />
+ <style type = "text/css">
+ label {
+ float: left;
+ width: 10em;
+ clear: left;
+ text-align: right;
+ padding-right: 1em;
+
+ input, select, textarea {
+ float: left;
+ width: 20em;
+ }
+ button {
+ display: block;
+ clear: both;
+ margin: auto;
+ }
+ </style>
+  </head>
+  <body>
+    <div id = "all">
+    <div id = "heading">
+    <h1>Facts and 101</h1>
+    </div>
+    <div class = "content">
+      <form action = "buildBlock.php"
+        method = "">
+        <fieldset>
+        <label>Categories</label>
+        <select name = "blockType">
+   <option value = "1">Food</option>
+   <option value = "2">Parking</option>
+   <option value = "3">Classes</option>
+   </select>
+ </fieldset>
+</form>
+</div>
+</div>
+</body>
