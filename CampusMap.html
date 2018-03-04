@@ -1,11 +1,56 @@
 <head>
   <title>StudentLife - Maps</title>
   <link rel="icon" type="image/png" href="sl.png" />
+
+  <style>
+  .button {
+  background-color: #505050;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-direction: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  curson: pointer;
+  }
+  .h2 {
+    font-family: Arial;
+    font-style: italic;
+    color: white;
+  }
+  </style>
 </head>
 
-<body text = "black" bgcolor = "FireBrick">
+<body text = "black" bgcolor = "black">
 
-  <div class = "tab">
+  <div id="index" class="tabcontent">
+    <body text = "white" bgcolor = "black">
+      <!--<p> <span style= "margin-left: 1.6em;">Washington State University</span> <span style= "margin-right: 1.6em;"> Whitworth University</span></p>-->
+      <img src = "wsu.png" alt = "WSU" width = "260" height = "260" border = "0" align = "left" /> <img src = "whitworth.png" alt = "WU" width = "260" height = "260" border = "0" align = "right" />
+  </div>
+
+  <center> <img src="studentlife.png" />
+    <h2 class="h2">Information about the WSU and WU Campuses!</h2>
+  </center>
+
+        <div class = "tab">
+          <center>
+            <a href="index.html">
+            <button class = "button">Home</button></a>
+            <a href = "CampusMap.html">
+            <button class = "button" onclick="openTab(event, 'Campus Map')">Campus Map</button></a>
+            <a href = "Clubs.html">
+            <button class = "button" onclick="openTab(event, 'Clubs')">Clubs</button>
+            <a href = "PostingBoard.html">
+            <button class = "button" onclick="openTab(event, 'Posting Board')">Posting Board</button> </a>
+            <a href = "Basics.html">
+            <button class = "button" onclick="openTab(event, 'Basics')">Basics</button></a>
+          </center>
+        </div>
+
+  <!--<div class = "tab">
     <center>
       <a href = "index.html">
       <button class = "tablinks" onclick="openTab(event, 'Home')" id="defaultOpen">Home</button>
@@ -18,10 +63,11 @@
       <a href = "PostingBoard.html">
       <button class = "tablinks" onclick="openTab(event, 'Posting Board')">Posting Board</button> </a>
     </center>
-  </div>
-
+  </div>-->
+<br /><br />
 <p><span style= "text-align: left;">Washington State University</span><span style="float:right;">Whitworth University</span></p>
-<iframe width="630" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://map.wsu.edu/t/414F6875" align="left" ></iframe>
-<span style= "float:right;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2682.3702270718227!2d-117.42005098436427!3d47.75487277919474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549e1c6919f92145%3A0xaac40fe09b8f0495!2sWhitworth+University!5e0!3m2!1sen!2sus!4v1520122249058" width="630" height="450" frameborder="0" style="border:0" allowfullscreen align="right"></iframe></span>
-<span style= "float:left;"><iframe src="https://www.google.com/maps/embed?pb=!4v1520161789794!6m8!1m7!1sB9JQQQ6Ucy2p3505m2okNA!2m2!1d46.73104078595171!2d-117.1654817415924!3f24.924221810208028!4f18.12255041767102!5f0.7820865974627469" width="630" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></span>
-<span style= "float:right;"><iframe src="https://www.google.com/maps/embed?pb=!4v1520161407323!6m8!1m7!1sv2g7T1WxrXk7fatTyxyGYA!2m2!1d47.75403869479287!2d-117.4191114887697!3f234.2172591640028!4f15.576653418854775!5f0.7820865974627469" width="630" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></span>
+<iframe width="610" height="450" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://map.wsu.edu/t/414F6875" align="left" ></iframe>
+<span style= "float:right;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2682.3702270718227!2d-117.42005098436427!3d47.75487277919474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x549e1c6919f92145%3A0xaac40fe09b8f0495!2sWhitworth+University!5e0!3m2!1sen!2sus!4v1520122249058" width="610" height="450" frameborder="0" style="border:0" allowfullscreen align="right"></iframe></span>
+
+<span style= "float:left;"><iframe src="https://www.google.com/maps/embed?pb=!4v1520161789794!6m8!1m7!1sB9JQQQ6Ucy2p3505m2okNA!2m2!1d46.73104078595171!2d-117.1654817415924!3f24.924221810208028!4f18.12255041767102!5f0.7820865974627469" width="610" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></span>
+<span style= "float:right;"><iframe src="https://www.google.com/maps/embed?pb=!4v1520161407323!6m8!1m7!1sv2g7T1WxrXk7fatTyxyGYA!2m2!1d47.75403869479287!2d-117.4191114887697!3f234.2172591640028!4f15.576653418854775!5f0.7820865974627469" width="610" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></span>
