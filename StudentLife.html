@@ -8,23 +8,20 @@
 
     <script>
     function myFunction($i) {
+
       console.log("myFunction called successfully. Called: " + $i);
-<<<<<<< HEAD
-      var major = ["Computer Science", "Mathematics", "Business", "English", "Music", "Marketing", "Biology", "Chemistry", "Physics", "Engineering", "Art", "Theater/Performance"];
-      var cookieValue = escape(major[$i]);
-      document.cookie = "major=" + cookieValue;
-=======
+
       var major = ["Computer Science", "Mathematics"];
-      var localValue = localStorage.setItem('major', major[$i]);
-      console.log(localStorage);
->>>>>>> ed873ec9888d8630568bcfa7ed0543e1ea8e200a
+      console.log(major[$i]);
+      //var cookieValue = escape(major[$i]);
+      //document.cookie = "major=" + cookieValue;
     }
     </script>
 </head>
 <div id="Home" class="tabcontent">
   <body text = "white" bgcolor = "black">
     <p> <span style= "text-align: left;">Washington State University</span> <span style= "float:right;"> Whitworth University</span></p>
-    <img src = "wsu.png" alt = "WSU" width = "250" height = "250" border = "0" align = "left"/> <img src = "whitworth.png" alt = "WU" width = "250" height = "250" border = "0" align = "right"/>
+    <img src = "C:\Users\krist\OneDrive\Documents\CrimsonCode/WSU.png" alt = "WSU" width = "500" height = "300" border = "3" align = "left"/> <img src = "C:\Users\krist\OneDrive\Documents\CrimsonCode\Whitworth.png" alt = "" width = "600" height = "250" border = "3" align = "right"/>
 
       <center>
         <h2>Information about the WSU and WU Campus!</h2>
@@ -35,17 +32,17 @@
 
       <div class = "tab">
         <center>
-          <a href = "StudentLife.html">
+          <a href = "C:/Users/krist/OneDrive/Documents/roadrunners/Home.html">
           <button class = "tablinks" onclick="openTab(event, 'Home')" id="defaultOpen">Home</button>
-          <a href = "CampusMap.html">
+          <a href = "C:/Users/krist/OneDrive/Documents/roadrunners/CampusMap.html">
           <button class = "tablinks" onclick="openTab(event, 'Campus Map')">Campus Map</button>
-          <a href = "Clubs.html">
+          <a href = "C:/Users/krist/OneDrive/Documents/roadrunners/Clubs.html">
           <button class = "tablinks" onclick="openTab(event, 'Clubs')">Clubs</button>
           <a href = "Connections.html">
           <button class = "tablinks" onclick="openTab(event, 'Connections')">Connections</button>
-          <a href = "Basics.html">
+          <a href = "C:/Users/krist/OneDrive/Documents/roadrunners/Basics.html">
           <button class = "tablinks" onclick="openTab(event, 'Basics')">Basics</button>
-          <a href = "PostingBoard.html">
+          <a href = "C:/Users/krist/OneDrive/Documents/roadrunners/PostingBoard.html">
           <button class = "tablinks" onclick="openTab(event, 'Posting Board')">Posting Board</button> </a>
         </center>
       </div>
@@ -59,21 +56,11 @@
               <option value = "">(SELECT)</option>
               <option value = "0">Computer Science</option>
               <option value = "1">Mathematics</option>
-              <option value = "2">Business</option>
-              <option value = "3">English</option>
-              <option value = "4">Music</option>
-              <option value = "5">Marketing</option>
-              <option value = "6">Biology</option>
-              <option value = "7">Chemistry</option>
-              <option value = "8">Physics</option>
-              <option value = "9">Engineering</option>
-              <option value = "10">Art</option>
-              <option value = "11">Theater/Performance</option>
             </select>
           </fieldset>
         </form>
       </div>
-      
+
 <script>
   function openTab(evt, tabName)
   {
