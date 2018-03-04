@@ -19,21 +19,81 @@
 </div>
 
 <script>
-function output(value)
+function output(thisValue)
 {
+  var value = thisValue.value;
   if (value == 1)
   {
-    document.write("1) Don't eat saga fish")
-    document.write("2) French dip fridays")
-    document.write("3) ")
+    document.bgcolor = "red";
+    document.write("Saga: 7am-9pm");
+    document.write("<br>");
+    document.write("<br>");
+    document.write("Grill: 11am-3pm, 5pm-7pm");
+    document.write("<br>");
+    document.write("<br>");
+    document.write("Mind and Heart: 7am-7pm");
+    document.write("<br>");
+    document.write("<br>");
+    document.write("1) Don't eat saga fish");
+    document.write("<br>");
+    document.write("<br>");
+    document.write("2) French dip fridays");
+    document.write("<br>");
+    document.write("<br>");
+    document.write("3) If the rice at the asian station looks bad, they also have rice by the condiments");
+    document.write("<br>");
+    document.write("<br>");
+    document.write("4) If all else fails, cereal");
+    document.write("<br>");
+    document.write("<br>");
+    document.write("5) The grill has great jamba juice");
+    document.write("<br>");
+    document.write("<br>");
+    document.write("6) Late night is free during finals week")
+    document.write("<br>");
+    document.write("<br>");
   }
   if (value == 2)
   {
-    document.write()
+    document.write("1) There is secret parking behind Westminster");
+    document.write("<br>");
+    document.write("<br>");
+    document.write("2) If the BMAC parking lot is full, there is extra parking further to the side of the gym");
+    document.write("<br>");
+    document.write("<br>");
+    document.write("3) Parking by the HUB fills up quick");
+    document.write("<br>");
+    document.write("<br>");
+    document.write("4) Guests are supposed to park over by the administration building");
+    document.write("<br>");
+    document.write("<br>");
+    document.write("5) Security won't ticket your car on weekends");
+    document.write("<br>");
+    document.write("<br>");
+    document.write("6) If it's snowing, avoid parking too close to others");
+    document.write("<br>");
+    document.write("<br>");
   }
   if (value == 3)
   {
-    document.write()
+    document.write("1) Take core 150 your freshman year");
+    document.write("<br>");
+    document.write("<br>");
+    document.write("2) Unless you love writing, avoid choosing a D-group leader from the English department");
+    document.write("<br>");
+    document.write("<br>");
+    document.write("2) Spread out your gen eds so you can have easy classes during all semesters");
+    document.write("<br>");
+    document.write("<br>");
+    document.write("3) 8am calculus sucks");
+    document.write("<br>");
+    document.write("<br>");
+    document.write("4) Avoid Hawthorne at all costs");
+    document.write("<br>");
+    document.write("<br>");
+    document.write("5) 8m labs are horrible, but ultimately they are good for you");
+    document.write("<br>");
+    document.write("<br>");
   }
 }
 </script>
@@ -62,7 +122,6 @@ function output(value)
  margin: auto;
  }
  </style>
-  </head>
   <body>
     <div id = "all">
     <div id = "heading">
@@ -71,15 +130,14 @@ function output(value)
     <div class = "content">
       <form action = "buildBlock.php"
         method = "">
-        <fieldset>
         <label>Categories</label>
-        <select name = "selectBox" onchange="output(value);">
-   <option value = "1">Food </option>
-   <option value = "2">Parking</option>
-   <option value = "3">Classes</option>
-   </select>
- </fieldset>
-</form>
-</div>
-</div>
-</body>
+        <select id="selection" onchange="output(this)">
+          <option value="">Select option</option>
+          <option value = "1">Food </option>
+          <option value = "2">Parking</option>
+          <option value = "3">Classes</option>
+        </select>
+      </div>
+    </div>
+  </body>
+  </head>
