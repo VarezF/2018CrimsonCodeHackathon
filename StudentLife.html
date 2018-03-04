@@ -51,9 +51,23 @@
         <form action = "buildBlock.php"
         method = "">
         <fieldset>
-          <level>Majors</label>
+          <level>School:</label>
             <select id = "selectBox" onchange="myFunction(value);">
-              <option value = "">(SELECT)</option>
+              <option value = "">(NOTHING SELECTED)</option>
+              <option value = "0">WSU</option>
+              <option value = "1">WU</option>
+            </select>
+          </fieldset>
+        </form>
+      </div>
+
+      <div class = "content">
+        <form action = "buildBlock.php"
+        method = "">
+        <fieldset>
+          <level>Select Interests:</label>
+            <select id = "selectBox" onchange="myFunction(value);">
+              <option value = "">(NOTHING SELECTED)</option>
               <option value = "0">Computer Science</option>
               <option value = "1">Mathematics</option>
             </select>
