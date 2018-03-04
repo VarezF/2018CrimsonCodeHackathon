@@ -1,7 +1,7 @@
 ~AgriculturalSciences
 ~ArtArchitectureAndDesign
 Artists' Cooperative
-~Biological and Environmental Science
+~BiologicalAndEnvironmentalScience
 ~Business
 Business Club
 Social Finance Club

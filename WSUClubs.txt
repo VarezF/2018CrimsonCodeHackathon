@@ -19,7 +19,7 @@ American Society of Landscaping Architects
 Masters of Design
 Photography Club
 Yarn Club
-~Biological and Environmental Science
+~BiologicalAndEnvironmentalScience
 American Veterinary Dental Society
 Animal Behavior Club
 Biology Club
@@ -66,7 +66,7 @@ Speech and Hearing Science Club
 ~Economics
 Economics Club
 The Marketing Club
-~Engineering and Computer Science
+~EngineeringAndComputerScience
 Aerospace Club
 American Chemical Society
 American Institute of Chemical Engineers
@@ -98,7 +98,7 @@ Society of Women Engineers
 Software as a Service Club
 Washington Technology Student Association
 World Computer Exchange
-Foreign Languages and Cultures
+~ForeignLanguagesAndCultures
 African Friendship Association
 American Indian Science and Engineering Society
 Arabic Language & Culture Organization
@@ -116,7 +116,7 @@ Hong Kong Student Organization
 International Students Council
 International veterinary Student Association
 Japanese Student Association
-Native Americans Women�s Association
+Native Americans Women's Association
 Nepali Students Association
 Indian Students Organization
 Indonesian Students Organization
@@ -135,7 +135,7 @@ Vietnamese Student Organization
 American Medical Association
 Neuroscience Club
 Optometric Physicians of Tomorrow (WSU)
-~History, Literature and Philosophy
+~HistoryLiteratureAndPhilosophy
 History Club
 ~Music
 Choral Company
@@ -143,11 +143,11 @@ Cougar Marching Band
 Low Brass Collective
 Organ Club
 Society of Composers
-~Physical and Mathematical Sciences
+~PhysicalAndMathematicalSciences
 Actuarial Science Club
 Physics and Astronomy Club
 Pyromaniacs Clay Club
-~Pre-Professional Students
+~PreProfessionalStudents
 Minority Association for Pre-health Students
 Minority Association of Pre-law
 Mock Trial @ WSU
@@ -161,11 +161,11 @@ Pre-Physician Assistant Club
 Pre-Vet Club
 Prevention Science Graduate Student Organization
 Pho Nu Pre-Nursing Club
-~Social Sciences
+~SocialSciences
 Anthropology Club
 Human Development Club
 Sociology Club
-~Sports and Fitness
+~SportsAndFitness
 Aerial Dance Society
 Athletic Training Club
 Archery
@@ -201,11 +201,11 @@ WSU Cycling Club
 WSU Equestrian Club
 WSU Fencing Club
 WSU Horse Polo Club
-WSU Men�s Ice Hockey Club
-WSU Men�s Lacrosse Club
-WSU Men�s Rugby
-WSU Men�s Soccer Club
-WSU Men�s Volleyball Club
+WSU Men's Ice Hockey Club
+WSU Men's Lacrosse Club
+WSU Men's Rugby
+WSU Men's Soccer Club
+WSU Men's Volleyball Club
 WSU Ski Club
 WSU Softball Club
 WSU Swim Club
@@ -227,7 +227,7 @@ Beekeeping Club
 Black Graduate Student Association
 Black Men Making A Difference
 Black Student Union
-Black Women�s Caucus
+Black Women's Caucus
 Campus Christian Fellowship
 Coalition for Women Students
 College Republicans
@@ -245,7 +245,7 @@ Muslim Student Association
 National Society of Minorities in Hospitality
 Navel Reserve Officer Training Corp
 Our Revolution Young progressives
-Pok�mon Club
+Pokemon Club
 Raptor Club
 Smash Bros @ WSU
 Snoqualmie Valley Kiwanis Club
