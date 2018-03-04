@@ -1,0 +1,59 @@
+<!-- Art, Architecture, and Design: -->
+        Artists' Cooperative
+<!-- Athletic: -->
+        Athletic Training Club
+        Climbing Club
+        Club Basketball
+        Fitness Club
+        Jubilation Dance Ministry
+        Spikeball
+        Swing and Ballroom Dance Club
+        Ultimate Frisbee Club
+<!-- Business: -->
+        Business Club
+        Social Finance Club
+        Student Investment Group
+<!-- Computer/Mathematics: -->
+        Association for Computing Machinery
+<!-- Cultural: -->
+        Black Student Union
+        FASA (Filipino-American Student Association)
+        H.O.L.A (Heritage of Latino Americans)
+        International Club
+        Na Pu?uwai ?o Hawai?i
+        UMOJA - African Culture Club
+  <!-- English: -->
+        Westminster Round
+  <!-- Health: -->
+        Pre-Med/Science Club
+  <!-- History: -->
+        History Club
+  <!-- Music: -->
+        Band of Whitworth Pirates (Pep-Band)
+        Vocal Jazz Ensemble
+<!-- Physics: -->
+        The Physics and Engineering Collective
+<!-- Religious: -->
+        Catholic Fellowship
+        En Christo
+        Students for Life
+        Young Americans for Freedom
+        Exceptional Praise Gospel Choir
+<!-- Science: -->
+         Alzheimer's Club
+        Chemistry and Other Sciences
+        Kipos: Students Advocating Environmental Justice
+<!-- Social Sciences: -->
+        Psi Chi/Psychology Club
+<!-- Theater: -->
+        United States Institute for Theatre Technology
+<!-- Volunteer: -->
+        Spokane Dream Project
+        Spokane Guilds' School Pirate Advisory Board
+<!-- Other: -->
+        APIS Bee Club
+        Gaming Club
+        GWH Students for Academia
+        Pirate PRIDE
+        Pokemon Trainers
+        Smash Bros
