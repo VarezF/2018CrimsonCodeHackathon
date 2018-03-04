@@ -18,6 +18,26 @@
   </center>
 </div>
 
+<script>
+function output(value)
+{
+  if (value == 1)
+  {
+    document.write("1) Don't eat saga fish")
+    document.write("2) French dip fridays")
+    document.write("3) ")
+  }
+  if (value == 2)
+  {
+    document.write()
+  }
+  if (value == 3)
+  {
+    document.write()
+  }
+}
+</script>
+
 <head>
  <meta charset="UTF-8">
  <title>Build new block</title>
@@ -53,8 +73,8 @@
         method = "">
         <fieldset>
         <label>Categories</label>
-        <select name = "blockType">
-   <option value = "1">Food</option>
+        <select name = "selectBox" onchange="output(value);">
+   <option value = "1">Food </option>
    <option value = "2">Parking</option>
    <option value = "3">Classes</option>
    </select>

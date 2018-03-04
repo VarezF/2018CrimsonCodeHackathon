@@ -9,7 +9,7 @@
     <script>
     function myFunction($i) {
       console.log("myFunction called successfully. Called: " + $i);
-      var major = ["Computer Science", "Mathematics"];
+      var major = ["Computer Science", "Mathematics", "Business", "English", "Music", "Marketing", "Biology", "Chemistry", "Physics", "Engineering", "Art", "Theater/Performance"];
       var cookieValue = escape(major[$i]);
       document.cookie = "major=" + cookieValue;
     }
@@ -53,11 +53,21 @@
               <option value = "">(SELECT)</option>
               <option value = "0">Computer Science</option>
               <option value = "1">Mathematics</option>
+              <option value = "2">Business</option>
+              <option value = "3">English</option>
+              <option value = "4">Music</option>
+              <option value = "5">Marketing</option>
+              <option value = "6">Biology</option>
+              <option value = "7">Chemistry</option>
+              <option value = "8">Physics</option>
+              <option value = "9">Engineering</option>
+              <option value = "10">Art</option>
+              <option value = "11">Theater/Performance</option>
             </select>
           </fieldset>
         </form>
       </div>
-
+      
 <script>
   function openTab(evt, tabName)
   {
