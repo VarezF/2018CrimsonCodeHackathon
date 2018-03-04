@@ -1,10 +1,9 @@
-<!doctype html>
-<HTML>
-<html lang="en">
-<body>
+<!doctype HTML>
+<html>
 
 <head>
-    <title>StudentLife</title>
+    <title>StudentLife - Home</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
 
     <script>
     function chooseInterest($i){
@@ -21,10 +20,12 @@
     }
     </script>
 </head>
-<div id="Home" class="tabcontent">
+
+<body>
+<div id="StudentLife" class="tabcontent">
   <body text = "white" bgcolor = "black">
     <p> <span style= "text-align: left;">Washington State University</span> <span style= "float:right;"> Whitworth University</span></p>
-    <img src = "wsu.png" alt = "WSU" width = "260" height = "260" border = "0" align = "left"/> <img src = "whitworth.png" alt = "WU" width = "260" height = "260" border = "0" align = "right"/>
+    <img src = "wsu.png" alt = "WSU" width = "260" height = "260" border = "0" align = "left" /> <img src = "whitworth.png" alt = "WU" width = "260" height = "260" border = "0" align = "right" />
 
       <center>
         <h2>Information about the WSU and WU Campuses!</h2>
@@ -36,13 +37,13 @@
       <div class = "tab">
         <center>
           <a href = "StudentLife.html">
-          <button class = "tablinks" onclick="openTab(event, 'Home')" id="defaultOpen">Home</button>
+          <button class = "tablinks" onclick="openTab(event, 'StudentLife')" id="defaultOpen">Home</button></a>
           <a href = "CampusMap.html">
-          <button class = "tablinks" onclick="openTab(event, 'Campus Map')">Campus Map</button>
+          <button class = "tablinks" onclick="openTab(event, 'Campus Map')">Campus Map</button></a>
           <a href = "Clubs.html">
           <button class = "tablinks" onclick="openTab(event, 'Clubs')">Clubs</button>
           <a href = "Basics.html">
-          <button class = "tablinks" onclick="openTab(event, 'Basics')">Basics</button>
+          <button class = "tablinks" onclick="openTab(event, 'Basics')">Basics</button></a>
           <a href = "PostingBoard.html">
           <button class = "tablinks" onclick="openTab(event, 'Posting Board')">Posting Board</button> </a>
         </center>
@@ -51,18 +52,34 @@
       <center> <h2> Club Finder Tool: </h2> </center>
       <p> <brk /> </p>
       <div class = "content">
+<<<<<<< HEAD
         <center>
+=======
+        <form action = "buildBlock.php" method = "">
+        <fieldset>
+>>>>>>> 37f47bb0a44fa010df3cc80c580eb3d6d738fb81
           <level>Select School:</label>
             <select id = "selectBox" onchange="chooseSchool(value);">
               <option value = "">(NOTHING SELECTED)</option>
               <option value = "0">Washington State University</option>
               <option value = "1">Whitworth University</option>
             </select>
+<<<<<<< HEAD
+=======
+            <input type="submit" value="submit">
+          </fieldset>
+        </form>
+>>>>>>> 37f47bb0a44fa010df3cc80c580eb3d6d738fb81
       </center>
       </div>
       <p> <brk /> </p>
       <div class = "content">
+<<<<<<< HEAD
         <center>
+=======
+        <form action = "buildBlock.php" method = "">
+        <fieldset>
+>>>>>>> 37f47bb0a44fa010df3cc80c580eb3d6d738fb81
           <level>Select Interests:</label>
             <select id = "selectBox" onchange="chooseInterest(value);">
               <option value = "">(NOTHING SELECTED)</option>
@@ -83,23 +100,32 @@
               <option value = "14">Social Sciences</option>
               <option value = "15">Sport and Fitness</option>
             </select>
+<<<<<<< HEAD
+=======
+            <input type="submit" value="submit">
+          </fieldset>
+        </form>
+>>>>>>> 37f47bb0a44fa010df3cc80c580eb3d6d738fb81
       </center>
       </div>
 
 <script>
-  function openTab(evt, tabName)
-  {
+  function openTab(evt, tabName) {
+
     var i, tabcontent, tablinks;
-    tabcontent = document.getElementsbyClassName("tabcontent");
-    for(i=0, i<tabcontent.length; i++)
-    {
+
+    tabcontent = document.getElementsByClassName("tabcontent");
+
+    for(i = 0, i < tabcontent.length; i++) {
       tabcontent[i].style.display = "none";
     }
-    tablinks = document.getElementsbyClassName("tablinks");
-    for(i = 0; i<tablinks.length; i++)
-    {
-      tablinks[i].className=tablinks[i].className.replace(" active", "");
+
+    tablinks = document.getElementsByClassName("tablinks");
+
+    for(i = 0; i<tablinks.length; i++) {
+      tablinks[i].className=tablinks[i].className.replace("active", "");
     }
+
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += "active";
     }
