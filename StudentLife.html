@@ -7,6 +7,7 @@
     <title>StudentLife</title>
 
     <script>
+<<<<<<< HEAD
     function chooseInterest($i){
       localStorage.setItem('interest',$i);
       var interest = localStorage.getItem('interest');
@@ -18,6 +19,14 @@
       var school = localStorage.getItem('school');
       console.log(school);
       console.log($s);
+=======
+    function myFunction($i) {
+
+      console.log("myFunction called successfully. Called: " + $i);
+      var major = ["Computer Science", "Mathematics"];
+      var localValue = localStorage.setItem('major', major[$i]);
+      console.log(localValue);
+>>>>>>> 7ff6a82a1963198f3575055b294abda421c18e71
     }
     </script>
 </head>
@@ -35,14 +44,12 @@
 
       <div class = "tab">
         <center>
-          <a href = "Home.html">
+          <a href = "StudentLife.html">
           <button class = "tablinks" onclick="openTab(event, 'Home')" id="defaultOpen">Home</button>
           <a href = "CampusMap.html">
           <button class = "tablinks" onclick="openTab(event, 'Campus Map')">Campus Map</button>
           <a href = "Clubs.html">
           <button class = "tablinks" onclick="openTab(event, 'Clubs')">Clubs</button>
-          <a href = "Connections.html">
-          <button class = "tablinks" onclick="openTab(event, 'Connections')">Connections</button>
           <a href = "Basics.html">
           <button class = "tablinks" onclick="openTab(event, 'Basics')">Basics</button>
           <a href = "PostingBoard.html">

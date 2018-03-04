@@ -1,69 +1,143 @@
-<body text = "black" bgcolor = "FireBrick">
+<!DOCTYPE html>
+<html>
+  <head>
+   <meta charset="UTF-8">
+   <title>Build new block</title>
+   <link rel = "stylesheet"
+    type = "text/css"
+    href = "csStd.css" />
+   <style type = "text/css">
+   label {
+   float: left;
+   width: 10em;
+   clear: left;
+   text-align: right;
+   padding-right: 1em;
 
-
-<div class = "tab">
-  <center>
-    <a href = "C:/Users/krist/OneDrive/Documents/roadrunners/Home.html">
-    <button class = "tablinks" onclick="openTab(event, 'Home')" id="defaultOpen">Home</button>
-    <a href = "C:/Users/krist/OneDrive/Documents/roadrunners/CampusMap.html">
-    <button class = "tablinks" onclick="openTab(event, 'Campus Map')">Campus Map</button>
-    <a href = "C:/Users/krist/OneDrive/Documents/roadrunners/Clubs.html">
-    <button class = "tablinks" onclick="openTab(event, 'Clubs')">Clubs</button>
-    <a href = "C:/Users/krist/OneDrive/Documents/roadrunners/Connections.html">
-    <button class = "tablinks" onclick="openTab(event, 'Connections')">Connections</button>
-    <a href = "C:/Users/krist/OneDrive/Documents/roadrunners/Basics.html">
-    <button class = "tablinks" onclick="openTab(event, 'Basics')">Basics</button>
-    <a href = "C:/Users/krist/OneDrive/Documents/roadrunners/PostingBoard.html">
-    <button class = "tablinks" onclick="openTab(event, 'Posting Board')">Posting Board</button> </a>
-  </center>
-</div>
-
-<script>
-function output(value)
-{
-  if (value == 1)
-  {
-    document.write("1) Don't eat saga fish")
-    document.write("2) French dip fridays")
-    document.write("3) ")
-  }
-  if (value == 2)
-  {
-    document.write()
-  }
-  if (value == 3)
-  {
-    document.write()
-  }
-}
-</script>
-
-<head>
- <meta charset="UTF-8">
- <title>Build new block</title>
- <link rel = "stylesheet"
-  type = "text/css"
-  href = "csStd.css" />
- <style type = "text/css">
- label {
- float: left;
- width: 10em;
- clear: left;
- text-align: right;
- padding-right: 1em;
-
- input, select, textarea {
- float: left;
- width: 20em;
- }
- button {
- display: block;
- clear: both;
- margin: auto;
- }
- </style>
+   input, select, textarea {
+   float: left;
+   width: 20em;
+   }
+   button {
+   display: block;
+   clear: both;
+   margin: auto;
+   }
+   </style>
   </head>
-  <body>
+
+  <!-- <body text = "black" bgcolor = "FireBrick"> -->
+
+  <script>
+  function output(thisValue)
+  {
+    // thisValue.style.backgroundColor="red";
+    var value = thisValue.value;
+    if (value == 1)
+    {
+      // TODO: Separate pages to different HTML files (e.g. Whitworth.html) and then redirect using:
+      // document.href = "./Whitworth.html";
+
+      document.write("Whitworth:")
+      document.write("<br>");
+      document.write("Saga: 7am-9pm");
+      document.write("<br>");
+      document.write("<br>");
+      document.write("Grill: 11am-3pm, 5pm-7pm");
+      document.write("<br>");
+      document.write("<br>");
+      document.write("Mind and Heart: 7am-7pm");
+      document.write("<br>");
+      document.write("<br>");
+      document.write("1) Don't eat saga fish");
+      document.write("<br>");
+      document.write("<br>");
+      document.write("2) French dip fridays");
+      document.write("<br>");
+      document.write("<br>");
+      document.write("3) If the rice at the asian station looks bad, they also have rice by the condiments");
+      document.write("<br>");
+      document.write("<br>");
+      document.write("4) If all else fails, cereal");
+      document.write("<br>");
+      document.write("<br>");
+      document.write("5) The grill has great jamba juice");
+      document.write("<br>");
+      document.write("<br>");
+      document.write("6) Late night is free during finals week")
+      document.write("<br>");
+      document.write("<br>");
+    }
+    if (value == 2)
+    {
+      document.write("Whitworth:")
+      document.write("<br>");
+      document.write("1) There is secret parking behind Westminster");
+      document.write("<br>");
+      document.write("<br>");
+      document.write("2) If the BMAC parking lot is full, there is extra parking further to the side of the gym");
+      document.write("<br>");
+      document.write("<br>");
+      document.write("3) Parking by the HUB fills up quick");
+      document.write("<br>");
+      document.write("<br>");
+      document.write("4) Guests are supposed to park over by the administration building");
+      document.write("<br>");
+      document.write("<br>");
+      document.write("5) Security won't ticket your car on weekends");
+      document.write("<br>");
+      document.write("<br>");
+      document.write("6) If it's snowing, avoid parking too close to others");
+      document.write("<br>");
+      document.write("<br>");
+    }
+    if (value == 3)
+    {
+      document.write("Whitworth:")
+      document.write("<br>");
+      document.write("1) Take core 150 your freshman year");
+      document.write("<br>");
+      document.write("<br>");
+      document.write("2) Unless you love writing, avoid choosing a D-group leader from the English department");
+      document.write("<br>");
+      document.write("<br>");
+      document.write("2) Spread out your gen eds so you can have easy classes during all semesters");
+      document.write("<br>");
+      document.write("<br>");
+      document.write("3) 8am calculus sucks");
+      document.write("<br>");
+      document.write("<br>");
+      document.write("4) Avoid Hawthorne at all costs");
+      document.write("<br>");
+      document.write("<br>");
+      document.write("5) 8m labs are horrible, but ultimately they are good for you");
+      document.write("<br>");
+      document.write("<br>");
+    }
+
+    // Set background color after document.write to ensure it remains
+    document.bgColor = "red";
+  }
+  </script>
+
+  <body class="body" style="background: FireBrick">
+    <!-- Header -->
+    <div class = "tab">
+      <center>
+        <a href = "StudentLife.html">
+        <button class = "tablinks" onclick="openTab(event, 'Home')" id="defaultOpen">Home</button>
+        <a href = "CampusMap.html">
+        <button class = "tablinks" onclick="openTab(event, 'Campus Map')">Campus Map</button>
+        <a href = "Clubs.html">
+        <button class = "tablinks" onclick="openTab(event, 'Clubs')">Clubs</button>
+        <a href = "Basics.html">
+        <button class = "tablinks" onclick="openTab(event, 'Basics')">Basics</button>
+        <a href = "PostingBoard.html">
+        <button class = "tablinks" onclick="openTab(event, 'Posting Board')">Posting Board</button> </a>
+      </center>
+    </div>
+
+    <!-- Content -->
     <div id = "all">
     <div id = "heading">
     <h1>Facts and 101</h1>
@@ -71,15 +145,14 @@ function output(value)
     <div class = "content">
       <form action = "buildBlock.php"
         method = "">
-        <fieldset>
         <label>Categories</label>
-        <select name = "selectBox" onchange="output(value);">
-   <option value = "1">Food </option>
-   <option value = "2">Parking</option>
-   <option value = "3">Classes</option>
-   </select>
- </fieldset>
-</form>
-</div>
-</div>
-</body>
+        <select id="selection" onchange="output(this)">
+          <option value="">Select option</option>
+          <option value = "1">Food </option>
+          <option value = "2">Parking</option>
+          <option value = "3">Classes</option>
+        </select>
+      </div>
+    </div>
+  </body>
+</html>
