@@ -7,14 +7,17 @@
     <title>StudentLife</title>
 
     <script>
-    function myFunction($i) {
-
-      console.log("myFunction called successfully. Called: " + $i);
-
-      var major = ["Computer Science", "Mathematics"];
-      console.log(major[$i]);
-      //var cookieValue = escape(major[$i]);
-      //document.cookie = "major=" + cookieValue;
+    function chooseInterest($i){
+      localStorage.setItem('interest',$i);
+      var interest = localStorage.getItem('interest');
+      console.log(interest);
+      console.log($i);
+    }
+    function chooseSchool($s) {
+      localStorage.setItem('school',$s);
+      var school = localStorage.getItem('school');
+      console.log(school);
+      console.log($s);
     }
     </script>
 </head>
@@ -48,31 +51,49 @@
       </div>
 
       <div class = "content">
+        <center>
         <form action = "buildBlock.php"
         method = "">
         <fieldset>
-          <level>School:</label>
-            <select id = "selectBox" onchange="myFunction(value);">
+          <level>Select School:</label>
+            <select id = "selectBox" onchange="chooseSchool(value);">
               <option value = "">(NOTHING SELECTED)</option>
               <option value = "0">WSU</option>
               <option value = "1">WU</option>
             </select>
           </fieldset>
         </form>
+      </center>
       </div>
 
       <div class = "content">
+        <center>
         <form action = "buildBlock.php"
         method = "">
         <fieldset>
           <level>Select Interests:</label>
-            <select id = "selectBox" onchange="myFunction(value);">
+            <select id = "selectBox" onchange="chooseInterest(value);">
               <option value = "">(NOTHING SELECTED)</option>
-              <option value = "0">Computer Science</option>
-              <option value = "1">Mathematics</option>
+              <option value = "0">Agricultural Sciences</option>
+              <option value = "1">Art, Architecture, and Design</option>
+              <option value = "2">Biological and Environmental Sciences</option>
+              <option value = "3">Business</option>
+              <option value = "4">Communication</option>
+              <option value = "5">Economics</option>
+              <option value = "6">Education</option>
+              <option value = "7">Engineering and Computer Science</option>
+              <option value = "8">Foreign Languages and Cultures</option>
+              <option value = "9">Health Sciences</option>
+              <option value = "10">History, Literature, and Philosophy</option>
+              <option value = "11">Music</option>
+              <option value = "12">Physical and Mathematical Sciences</option>
+              <option value = "13">Pre-Professional Studies</option>
+              <option value = "14">Social Sciences</option>
+              <option value = "15">Sport and Fitness</option>
             </select>
           </fieldset>
         </form>
+      </center>
       </div>
 
 <script>
